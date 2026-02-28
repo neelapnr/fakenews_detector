@@ -12,6 +12,17 @@ import re
 import requests
 from newspaper import Article
 
+
+# -----------------------
+# Charger le CSS
+# -----------------------
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css("style.css")
+
+
 # ----------------------------------------------------------
 # clé API chargement
 # ----------------------------------------------------------
