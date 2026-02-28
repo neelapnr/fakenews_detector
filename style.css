@@ -4,87 +4,79 @@ html, body, [class*="css"]  {
 }
 
 [data-testid="stAppViewContainer"] {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    background: linear-gradient(135deg, #f6f1e7, #efe6d8);
+    color: #3e3a36;
 }
 
 /* ===== Titre principal ===== */
 .main-title {
     text-align: center;
     padding: 2rem 0 1rem 0;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: fadeIn 1.2s ease-in-out;
+    color: #5a4e42;
 }
 
-/* ===== Cards effet Glass ===== */
+/* ===== Cards effet doux ===== */
 .card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
     padding: 2rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.1);
-    animation: slideUp 0.6s ease;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
-/* ===== Bouton stylé ===== */
+/* ===== Bouton stylé crème ===== */
 .stButton>button {
     width: 100%;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background: linear-gradient(90deg, #d6bfa7, #c8a97e);
     color: white;
     font-weight: 600;
     padding: 0.9rem;
     border-radius: 14px;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     transition: all 0.3s ease;
 }
 
 .stButton>button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(200, 169, 126, 0.4);
     cursor: pointer;
 }
 
+/* ===== Text area ===== */
 textarea {
     border-radius: 12px !important;
-    background: rgba(255,255,255,0.08) !important;
-    color: white !important;
+    background: rgba(255,255,255,0.8) !important;
+    color: #3e3a36 !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
 }
 
+/* ===== Tabs ===== */
 .stTabs [data-baseweb="tab"] {
     font-weight: 600;
     font-size: 1rem;
+    color: #6b5e52;
 }
 
 .stTabs [aria-selected="true"] {
-    color: #00c6ff !important;
+    color: #c8a97e !important;
 }
 
+/* ===== Progress bar ===== */
 .stProgress > div > div > div > div {
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background: linear-gradient(90deg, #d6bfa7, #c8a97e);
 }
 
+/* ===== Footer ===== */
 .footer {
     text-align: center;
-    color: rgba(255,255,255,0.6);
+    color: #8c7f72;
     font-size: 0.85rem;
     margin-top: 3rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    border-top: 1px solid rgba(0,0,0,0.08);
 }
